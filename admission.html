@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADMISSION | NIT Warangal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("college.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        /* Blur effect for background */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: inherit;
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px);
+            z-index: -1;
+        }
+
+        header {
+            background-color: rgba(6, 6, 85, 0.85);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: rgba(6, 6, 85, 0.85);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            margin: 70px auto;
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+        }
+
+        .content h2 {
+            font-size: 32px;
+            color: rgba(6, 6, 85, 0.95);
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgba(20, 20, 20, 0.9);
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 8px;
+            background-color: rgba(12, 12, 75, 0.9);
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="./logo.png" alt="Institute Logo">
+        <h1>NATIONAL INSTITUTE OF TECHNOLOGY WARANGAL</h1>
+        <h4>An Institute of National Importance</h4>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="./ABOUT.HTML">ABOUT</a>
+        <a href="./departments.html">DEPARTMENT</a>
+        <a href="./admission.html">ADMISSION</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./gallery.html">GALLERY</a>
+    </nav>
+
+    <!-- Admission Content -->
+    <div class="content">
+        <h2>Admissions</h2>
+        <p>
+            Admissions at NIT Warangal are offered at the Undergraduate, Postgraduate, and Doctoral levels.  
+            <br><br>
+            • <b>B.Tech</b> admissions are through <b>JEE (Main)</b> followed by centralized counseling (JoSAA/CSAB).  
+            <br>
+            • <b>M.Tech/MBA/MSc</b> admissions are based on <b>GATE, CAT, JAM</b> scores with counseling or institute-level process.  
+            <br>
+            • <b>PhD</b> admissions are conducted twice a year, based on written tests/interviews and research proposals.  
+            <br><br>
+            For more details and updates, please visit the official <a href="https://nitw.ac.in/admissions" target="_blank">NIT Warangal Admission Portal</a>.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 | Centre for Digital Infrastructure and Services (CDIS)</p>
+    </footer>
+</body>
+</html>

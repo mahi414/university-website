@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GALLERY | NIT Warangal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("college.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        /* Blur background */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: inherit;
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px);
+            z-index: -1;
+        }
+
+        header {
+            background-color: rgba(6, 6, 85, 0.85);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: rgba(6, 6, 85, 0.85);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            margin: 60px auto 80px auto;
+            width: 90%;
+            max-width: 1100px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+        }
+
+        .content h2 {
+            font-size: 32px;
+            color: rgba(6, 6, 85, 0.95);
+            margin-bottom: 30px;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 8px;
+            background-color: rgba(12, 12, 75, 0.9);
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="./logo.png" alt="Institute Logo">
+        <h1>NATIONAL INSTITUTE OF TECHNOLOGY WARANGAL</h1>
+        <h4>An Institute of National Importance</h4>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="./ABOUT.HTML">ABOUT</a>
+        <a href="./departments.html">DEPARTMENT</a>
+        <a href="./admission.html">ADMISSION</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./gallery.html">GALLERY</a>
+    </nav>
+
+    <!-- Gallery Content -->
+    <div class="content">
+        <h2>Campus Gallery</h2>
+        <div class="gallery">
+            <a href="./gallery1.png" target="_blank"><img src="./gallery1.png" alt="Campus View 1"></a>
+            <a href="./gallery2.jpeg" target="_blank"><img src="./gallery2.jpeg" alt="Campus View 2"></a>
+            <a href="./gallery3.jpeg" target="_blank"><img src="./gallery3.jpeg" alt="Campus View 3"></a>
+            <a href="./gallery4.jpeg" target="_blank"><img src="./gallery4.jpeg" alt="Campus View 4"></a>
+            <a href="./gallery5.jpeg" target="_blank"><img src="./gallery5.jpeg" alt="Campus View 5"></a>
+            <a href="./gallery6.jpeg" target="_blank"><img src="./gallery6.jpeg" alt="Campus View 6"></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 | Centre for Digital Infrastructure and Services (CDIS)</p>
+    </footer>
+</body>
+</html>

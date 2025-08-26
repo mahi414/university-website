@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME PAGE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200vh;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: rgba(6, 6, 85, 0.774);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: rgba(6, 6, 85, 0.774);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            border: 2px solid rgb(25, 12, 83);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(29, 29, 26, 0.295);
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .ranking-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .ranking-box {
+            font-family: cursive;
+            font-size:xx-large;
+            color: rgba(6, 6, 73, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .circle-container {
+
+           display: flex;
+           justify-content: space-around;
+           margin: 80px 0;   /* increased from 40px */
+        } 
+        
+        .ranking-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: -20px;   /* negative margin pulls them upward */
+        }
+        
+        .director-section {
+            margin: 60px 40px;
+        }
+
+        .director-heading {
+            text-align: center;
+            font-size: 28px;
+            color: rgba(6, 6, 85, 0.9);
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+        }
+
+        .director-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px; /* keeps image & text close but not sticking */
+        }
+
+        .director-img {
+            width: 220px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border: 2px solid rgba(6, 6, 85, 0.7);
+        }
+
+        .director-text {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: rgba(6, 6, 73, 0.95);
+            font-family: Verdana, sans-serif;
+        }
+    
+        
+/* Remove forced big page height */
+        
+        .nitw-image {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nitw-image img {
+            width: 100%;      /* full width */
+            height: auto;     /* keeps aspect ratio */
+            display: block;   /* removes extra gaps */
+}
+
+
+/* Footer stays fixed */
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 8px;
+            background-color: rgba(12, 12, 75, 0.9);
+            color: white;
+            font-size: 14px;
+}
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="Institute Logo">
+        <h1>NATIONAL INSTITUTE OF TECHNOLOGY WARANGAL</h1>
+        <h4>An Institute of National Importance</h4>
+    </header>
+
+    <nav>
+        <a href="./ABOUT.HTML">ABOUT</a>
+        <a href="./departments.html">DEPARTMENT</a>
+        <a href="./admission.html">ADMISSION</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./gallery.html">GALLERY</a>
+    </nav>
+
+    <div class="circle-container">
+        <div class="circle">ENGINEERING COLLEGE 21</div>
+        <div class="circle">OVERALL 53</div>
+        <div class="circle">ASIA 351-400</div>
+        <div class="circle">WORLD 1001-2000</div>
+    </div>
+
+    <div class="ranking-container">
+        <div class="ranking-box">Ranking NIRF-2024</div>
+        <div class="ranking-box">Times Higher Education-2024</div>
+    </div>
+
+    <div class="director-section">
+    <h2 class="director-heading">Director's Message</h2>
+    
+    <div class="director-content">
+        <!-- Director Image -->
+        <img src="./dean.png" alt="Director" class="director-img">
+
+        <!-- Director Message -->
+        <div class="director-text">
+            <p>
+                Welcome to the National Institute of Technology Warangal.  
+                Our vision is to foster excellence in education and research, 
+                nurturing young minds to become leaders and innovators of tomorrow.  
+                We believe in creating a collaborative and inclusive environment 
+                where knowledge meets purpose.
+            </p>
+        </div>
+    </div>
+</div>
+    
+
+    <div class="nitw-image">
+    <img src="./cllg.png" alt="NIT Warangal Campus">
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2025 | Centre for Digital Infrastructure and Services (CDIS)</p>
+    </footer>
+
+    
+</div>
+</body>
+</html>
